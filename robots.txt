@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://casino-ultimate-haven.com/sitemap.xml

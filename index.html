@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Casino-Ultimate-Haven - Free Social Gaming Platform</title>
+    <meta name="keywords"
+        content="Free Social Game, Interactive Gaming, Fun Play, Virtual Rewards, Entertainment, 18+ Gaming, Social Play, Skill-Based Challenges, High-Stakes Fun">
+    <meta name="description"
+        content="Casino-Ultimate-Haven is a free social gaming platform offering exciting interactive experiences. No real-money prizes, just pure entertainment for players 18+!">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@200;300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+
+    <link href="img/ico.png" rel="icon">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="ageVerification" class="age-overlay">
+        <div class="age-popup">
+            <h2 class="text-warning text-uppercase">Age Verification</h2>
+            <p class="text-white fs-5">You must be <strong>18 years or older</strong> to enter
+                <strong>Casino-Ultimate-Haven</strong>.
+            </p>
+            <div class="d-flex justify-content-center mt-3">
+                <button id="btnYes" class="btn btn-success me-3">Yes, I am 18+</button>
+                <button id="btnNo" class="btn btn-danger">No</button>
+            </div>
+            <p class="text-white mt-4">
+                Play responsibly. Need help? Visit
+                <a href="https://www.gamcare.org.uk/" target="_blank" class="text-warning">GamCare</a> or
+                <a href="https://www.begambleaware.org/" target="_blank" class="text-warning">BeGambleAware</a>.
+            </p>
+        </div>
+    </div>
+
+    <div id="cookie-banner" class="cookie-banner">
+        <p>
+            We use cookies to enhance your experience. By continuing, you agree to our
+            <a href="cookie.html">Cookie Policy</a> and
+            <a href="terms.html">Terms and Conditions</a>.
+        </p>
+        <div class="cookie-buttons">
+
+            <button id="accept-cookies">Accept</button>
+            <button id="decline-cookies">Decline</button>
+        </div>
+    </div>
+
+    <div class="container-fluid nav-bar p-0">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5 py-3 py-lg-0">
+            <a href="/" class="navbar-brand p-0">
+                <h1 class="display-5 text-secondary m-0">Casino-Ultimate-Haven
+                </h1>
+
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="/" class="nav-item nav-link active">Home</a>
+                    <a href="#about" class="nav-item nav-link">About</a>
+                    <a href="#games" class="nav-item nav-link">Games</a>
+                    <a href="#testi" class="nav-item nav-link">Testimonials</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="carousel-header">
+        <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#carouselId" data-bs-slide-to="1"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <img src="img/bg-1.webp" class="img-fluid" alt="Gaming Fun">
+                    <div class="carousel-caption">
+                        <div class="text-center p-4" style="max-width: 900px;">
+                            <h4 class="text-white text-uppercase fw-bold mb-3 mb-md-4 wow fadeInUp"
+                                data-wow-delay="0.1s">
+                                Your Gateway to Thrilling Social Play!</h4>
+                            <h1 class="display-1 text-capitalize text-white mb-3 mb-md-4 wow fadeInUp"
+                                data-wow-delay="0.3s">
+                                Dive Into Non-Stop Interactive Entertainment!</h1>
+                            <p class="text-white mb-4 mb-md-5 fs-5 wow fadeInUp" data-wow-delay="0.5s">
+                                Experience exciting challenges, fun-filled adventures, and endless rewards.
+                                Engage in social gaming like never before!</p>
+                            <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5 wow fadeInUp"
+                                data-wow-delay="0.7s" href="#games">Explore Games</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/bg-2.webp" class="img-fluid" alt="Gaming Fun">
+                    <div class="carousel-caption">
+                        <div class="text-center p-4" style="max-width: 900px;">
+                            <h5 class="text-white text-uppercase fw-bold mb-3 mb-md-4 wow fadeInUp"
+                                data-wow-delay="0.1s">
+                                Fun, Excitement & Interactive Play</h5>
+                            <h1 class="display-1 text-capitalize text-white mb-3 mb-md-4 wow fadeInUp"
+                                data-wow-delay="0.3s">
+                                Enjoy Social Gaming Like Never Before!</h1>
+                            <p class="text-white mb-4 mb-md-5 fs-5 wow fadeInUp" data-wow-delay="0.5s">
+                                Play, compete, and connect with friends in a world of high-energy entertainment.
+                                Engage in dynamic gameplay with exciting challenges!</p>
+                            <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5 wow fadeInUp"
+                                data-wow-delay="0.7s" href="#games">Explore Games</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon bg-secondary wow fadeInLeft" data-wow-delay="0.2s"
+                    aria-hidden="false"></span>
+                <span class="visually-hidden-focusable">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+                <span class="carousel-control-next-icon bg-secondary wow fadeInRight" data-wow-delay="0.2s"
+                    aria-hidden="false"></span>
+                <span class="visually-hidden-focusable">Next</span>
+            </button>
+        </div>
+    </div>
+    <div class="container-fluid py-4 bg-dark text-center">
+        <div class="container">
+            <h2 class="text-warning fw-bold text-uppercase">Important Notice</h2>
+            <p class="text-white fs-5 mt-3">
+                <strong>FREE SOCIAL GAME +18</strong> – <strong>Casino-Ultimate-Haven</strong> is a platform for
+                entertainment only. No real-money winnings or gambling opportunities.
+                All in-game rewards are purely virtual and meant for fun!
+            </p>
+            <p class="text-white fs-5">
+                By playing on <strong>Casino-Ultimate-Haven</strong>, you confirm that you are
+                <strong>18 years or older</strong>. Enjoy responsibly!
+            </p>
+        </div>
+    </div>
+
+
+    <div id="about" class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-xl-5 wow fadeInLeft" data-wow-delay="0.1s">
+                    <div class="bg-light rounded">
+                        <img src="img/about.jpg" class="img-fluid w-100" style="border-radius: 15px;" alt="Game Image">
+                    </div>
+                </div>
+                <div class="col-xl-7 wow fadeInRight" data-wow-delay="0.3s">
+                    <h5 class="sub-title pe-3">About the Game</h5>
+                    <h1 class="display-5 mb-4">Experience Thrilling Social Play Like Never Before!</h1>
+                    <p class="mb-4">Step into a world of interactive gaming where excitement meets fun!
+                        Enjoy engaging challenges, skill-based adventures, and rewarding experiences in
+                        a social setting designed for ultimate entertainment.</p>
+                    <div class="row gy-4 align-items-center">
+                        <div class="col-12 col-sm-6 d-flex align-items-center">
+                            <i class="fas fa-gamepad fa-3x text-secondary"></i>
+                            <h5 class="ms-4">Exciting & Interactive Play</h5>
+                        </div>
+                        <div class="col-12 col-sm-6 d-flex align-items-center">
+                            <i class="fas fa-users fa-3x text-secondary"></i>
+                            <h5 class="ms-4">Connect & Compete with Friends</h5>
+                        </div>
+
+                        <div class="col-8 col-md-9">
+                            <div class="mb-5">
+                                <p class="text-primary h6 mb-3"><i class="fa fa-check-circle text-secondary me-2"></i>
+                                    100% Free Social Gaming Experience</p>
+                                <p class="text-primary h6 mb-3"><i class="fa fa-check-circle text-secondary me-2"></i>
+                                    Engaging & Fun Gameplay</p>
+                                <p class="text-primary h6 mb-3"><i class="fa fa-check-circle text-secondary me-2"></i>
+                                    Skill-Based Challenges for Everyone</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <div id="games" class="container py-5">
+        <h2 class="text-center text-uppercase fw-bold mb-4">Discover Our Games</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card border-0 shadow-lg">
+                    <img src="img/g-1.webp" class="card-img-top" alt="Game 1">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Fire Toad</h5>
+                        <a href="game-1.html" class="btn btn-primary">Play Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-0 shadow-lg">
+                    <img src="img/g-2.webp" class="card-img-top" alt="Game 2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Fire Joker Freeze</h5>
+                        <a href="game-2.html" class="btn btn-primary">Play Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-0 shadow-lg">
+                    <img src="img/g-3.jpg" class="card-img-top" alt="Game 3">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">3 Clown Monty</h5>
+                        <a href="game-3.html" class="btn btn-primary">Play Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-4 mt-3">
+            <div class="col-md-4">
+                <div class="card border-0 shadow-lg">
+                    <img src="img/g-4.webp" class="card-img-top" alt="Game 4">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Scroll of Dead</h5>
+                        <a href="game-4.html" class="btn btn-primary">Play Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-0 shadow-lg">
+                    <img src="img/g-5.jpg" class="card-img-top" alt="Game 5">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Prism of Gems</h5>
+                        <a href="game-5.html" class="btn btn-primary">Play Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-0 shadow-lg">
+                    <img src="img/g-6.png" class="card-img-top" alt="Game 6">
+                    <div class="card-body text-center">
+                        <h5 class="card-title"> Gemix 2</h5>
+                        <a href="game-6.html" class="btn btn-primary">Play Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="testi" class="container-fluid testimonial overflow-hidden pb-5">
+        <div class="container py-5">
+            <div class="section-title text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="sub-style">
+                    <h5 class="sub-title text-primary px-3">PLAYER REVIEWS</h5>
+                </div>
+                <h1 class="display-5 mb-4">What Our Players Say</h1>
+                <p class="mb-0">Discover what our community loves about the ultimate social gaming experience!</p>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="testimonial-item p-4 shadow-sm">
+                        <p class="fs-5 mb-3">"Absolutely love the thrill of every challenge! This is the best social
+                            gaming experience ever!"</p>
+                        <div class="d-flex justify-content-end">
+                            <i class="fas fa-star text-secondary"></i>
+                            <i class="fas fa-star text-secondary"></i>
+                            <i class="fas fa-star text-secondary"></i>
+                            <i class="fas fa-star text-secondary"></i>
+                            <i class="fas fa-star text-secondary"></i>
+                        </div>
+                        <div class="d-flex align-items-center mt-3">
+                            <img class="img-fluid rounded-circle me-3 img-rev" src="img/rev-1.png" alt="User 1"
+                                width="80">
+                            <div>
+                                <h5>James Carter</h5>
+                                <p class="mb-0">Gamer & Strategy Enthusiast</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="testimonial-item p-4 shadow-sm">
+                        <p class="fs-5 mb-3">"The graphics are amazing, and the gameplay keeps me coming back every day.
+                            Highly recommended!"</p>
+                        <div class="d-flex justify-content-end">
+                            <i class="fas fa-star text-secondary"></i>
+                            <i class="fas fa-star text-secondary"></i>
+                            <i class="fas fa-star text-secondary"></i>
+                            <i class="fas fa-star text-secondary"></i>
+                            <i class="fas fa-star text-secondary"></i>
+                        </div>
+                        <div class="d-flex align-items-center mt-3">
+                            <img class="img-fluid rounded-circle me-3 img-rev" src="img/rev-2.png" alt="User 2"
+                                width="80">
+                            <div>
+                                <h5>Emily Dawson</h5>
+                                <p class="mb-0">Casual Player & Puzzle Solver</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="testimonial-item p-4 shadow-sm">
+                        <p class="fs-5 mb-3">"It's not just about playing – it's about the experience! The social aspect
+                            makes it even better!"</p>
+                        <div class="d-flex justify-content-end">
+                            <i class="fas fa-star text-secondary"></i>
+                            <i class="fas fa-star text-secondary"></i>
+                            <i class="fas fa-star text-secondary"></i>
+                            <i class="fas fa-star text-secondary"></i>
+                            <i class="fas fa-star text-secondary"></i>
+                        </div>
+                        <div class="d-flex align-items-center mt-3">
+                            <img class="img-fluid rounded-circle me-3 img-rev" src="img/rev-3.png" alt="User 3"
+                                width="80">
+                            <div>
+                                <h5>William Thompson</h5>
+                                <p class="mb-0">Competitive Gamer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="testimonial-item p-4 shadow-sm">
+                        <p class="fs-5 mb-3">"The challenges are addictive, and the rewards keep me engaged. Perfect for
+                            unwinding!"</p>
+                        <div class="d-flex justify-content-end">
+                            <i class="fas fa-star text-secondary"></i>
+                            <i class="fas fa-star text-secondary"></i>
+                            <i class="fas fa-star text-secondary"></i>
+                            <i class="fas fa-star text-secondary"></i>
+                            <i class="fas fa-star text-secondary"></i>
+                        </div>
+                        <div class="d-flex align-items-center mt-3">
+                            <img class="img-fluid rounded-circle me-3 img-rev" src="img/rev-4.png" alt="User 4"
+                                width="80">
+                            <div>
+                                <h5>Charlotte Reed</h5>
+                                <p class="mb-0">Strategy & Card Game Fan</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="text-secondary mb-4">Contact Info</h4>
+                        <div style="color: #fff;"><i class="fa fa-map-marker-alt me-2"></i> 2B Vancouver Rd, London SE23 2AF, UK</div>
+                        <div style="color: #fff;"><i class="fas fa-envelope me-2"></i> support@casino-ultimate-haven.com</div>
+                        <div style="color: #fff;"><i class="fas fa-phone me-2"></i> +44 20 3916 9421</div>
+                    </div>
+
+                </div>
+
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="text-secondary mb-4">Quick Links</h4>
+                        <a href="/" class="nav-item nav-link active"><i class="fas fa-angle-right me-2"></i> Home</a>
+                        <a href="#about" class="nav-item nav-link"><i class="fas fa-angle-right me-2"></i> About</a>
+                        <a href="#games" class="nav-item nav-link"><i class="fas fa-angle-right me-2"></i> Games</a>
+                        <a href="#testi" class="nav-item nav-link"><i class="fas fa-angle-right me-2"></i>
+                        Testimonials</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="text-secondary mb-4">Information</h4>
+                        <a href="privacy.html" class=""><i class="fas fa-angle-right me-2"></i> Privacy Policy</a>
+                        <a href="terms.html" class=""><i class="fas fa-angle-right me-2"></i> Terms and Conditions</a>
+                        <a href="cookie.html" class=""><i class="fas fa-angle-right me-2"></i> Cookie Policy</a>
+                        <a href="disclaimer.html" class=""><i class="fas fa-angle-right me-2"></i> Disclaimer</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid copyright py-4">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-md-0">
+                    <span class="text-white">
+                        <a href="/" class="border-bottom text-white">
+                            <i class="fas fa-copyright text-light me-2"></i>Casino-Ultimate-Haven
+                        </a>, All rights reserved.
+                        <strong>FREE SOCIAL GAME +18</strong> – This platform is for entertainment only. No real-money
+                        prizes or winnings.
+                    </span>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let popup = document.getElementById("ageVerification");
+            let btnYes = document.getElementById("btnYes");
+            let btnNo = document.getElementById("btnNo");
+
+            if (!localStorage.getItem("ageVerified")) {
+                popup.style.display = "flex";
+            }
+
+            btnYes.addEventListener("click", function () {
+                localStorage.setItem("ageVerified", "true");
+                popup.style.display = "none";
+            });
+
+            btnNo.addEventListener("click", function () {
+                window.location.href = "https://www.google.com/";
+            });
+        });
+        document.addEventListener("DOMContentLoaded", function () {
+            if (!localStorage.getItem("cookiesAccepted") && !localStorage.getItem("cookiesDeclined")) {
+                document.getElementById("cookie-banner").style.display = "flex";
+            }
+
+            document.getElementById("accept-cookies").addEventListener("click", function () {
+                localStorage.setItem("cookiesAccepted", "true");
+                document.getElementById("cookie-banner").style.display = "none";
+            });
+
+            document.getElementById("decline-cookies").addEventListener("click", function () {
+                localStorage.setItem("cookiesDeclined", "true");
+                document.getElementById("cookie-banner").style.display = "none";
+            });
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
